@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <script src="script.js"></script>
+    <style>
+       body {
+ 
+        font-family: 'Times New Roman', Times, serif;
+     margin: 20px;
+    }
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: flexbox;
+  margin-bottom: 30px;
+}
+
+input[type="text"], input[type="number"] {
+  width: 200px;
+  padding: 10px;
+}
+
+button {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#display-items {
+  margin-top: 20px;
+}
+
+#display-items table {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+#display-items th, #display-items td {
+  border: 1px solid #61acc4;
+  padding: 20px;
+}
+
+#display-items th {
+  background-color: #61acc4;
+}
+      </style>
+</head>
+<body>
+
+    <h1>Shopping Cart</h1>
+    <fieldset>
+        <legend>Add Item</legend>
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name">
+        <label for="item-quantity">Item Quantity:</label>
+        <input type="number" id="item-quantity">
+        <button onclick="addItem()">Save Item</button>
+        <button onclick="updateItem()">Update Item</button>
+        <button onclick="deleteItem()">Delete Item</button>
+    </fieldset>
+
+    <fieldset id="display-items">
+        <legend>Display Items</legend>
+
+        <table id="item-table">
+            <tr>
+                <th>Item Name</th>
+                <th>Item Quantity</th>
+            </tr>
+
+            <button onclick="clearItems()">Delete All Items</button>
+        </table>
+    </fieldset>
+</body>
+</html>

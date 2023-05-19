@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timetable</title>
+    <style>
+ table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 3px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            width: 6.2%; 
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .subject1 {
+            background-color: rgb(113, 197, 113);
+        }
+
+        .subject2 {
+            background-color: rgb(108, 108, 187);
+        }
+
+        .lunch {
+            background-color: rgb(119, 110, 110);
+        }
+
+        .subject3 {
+            background-color: rgb(42, 42, 170);
+        }
+
+        .study-period {
+            background-color: rgb(168, 121, 168);
+        }
+
+        .extend {
+            background-color: rgb(54, 132, 168);
+        }
+    </style>
+</head>
+<body>
+    <h1>Timetable</h1>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>9:00</th>
+            <th></th>
+            <th>10:00</th>
+            <th></th>
+            <th>11:00</th>
+            <th></th>
+            <th>12:00</th>
+            <th></th>
+            <th>1:00</th>
+            <th></th>
+            <th>2:00</th>
+            <th></th>
+            <th>3:00</th>
+            <th></th>
+            <th>4:00</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="3" class="study-period">STUDY PERIOD</td>
+            <td></td>
+            <td colspan="2" class="subject1">subject 1</td>
+            <td></td>
+            <td colspan="2" class="subject2">subject 2</td>
+            <td></td>
+            <td colspan="3" class="lunch"> Lunch </td>
+            <td></td>
+            <td colspan="2.5" class="study-period"> Study Period</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="3" class="subject3">Subject 3</td>
+            <td></td>
+            <td colspan="2" class="study-period">Study Period</td>
+            <td></td>
+            <td colspan="2.5" class="lunch">Lunch </td>
+            <td></td>
+            <td colspan="3" class="subject2"> subject 2</td>
+            <td></td>
+            <td colspan="2.5" class="subject1"> subject 1</td>
+            
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="3" class="study-period"> Study Period</td>
+            <td></td>
+            <td colspan="2" class="subject3">Subject 3</td>
+            <td></td>
+            <td colspan="2" class="extend"> Extend </td>
+            <td colspan="1.5" class="lunch">Lunch</td>
+            <td colspan="2" class="study-period">Study Period</td>
+            <td></td>
+            <td></td>
+            <td colspan="1.5" class="study-period"> Study Period </td>
+            
+        
+        </tr>
+
+
+        <tr>
+            <td>Thursday</td>
+            <td colspan="3" class="subject1"> subject 1</td>
+            <td></td>
+            <td colspan="2.5" class="study-period">Study Period</td>
+            <td></td>
+            <td colspan="2.5" class="subject2">subject 2</td>
+            <td></td>
+            <td colspan="3" class="lunch"> Lunch</td>
+            <td></td>
+            <td colspan="1.5" class="subject3"> Subject 3</td>
+
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td colspan="3" class="study-period"> Study Period</td>
+            <td></td>
+            <td colspan="2" class="subject3"> Subject 3</td>
+            <td></td>
+            <td colspan="2.5" class="lunch"> Lunch</td>
+            <td></td>
+            <td colspan="3" class="subject2"> subject 2</td>
+            <td></td>
+            <td colspan="1.5 " class="subject1">subject 1</td>
+            <td></td>
+        </tr>
+        
+    </table>
+</body>
+</html>
